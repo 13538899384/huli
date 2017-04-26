@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@mipmap/icon_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.ygxy.xqm.huli.myview.MyTopbar-->
+        <!--android:id="@+id/pk_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/icon_pk4"
+        android:scaleType="centerCrop"
+        android:layout_margin="25dp"
+        android:layout_width="145dp"
+        android:layout_height="45dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/pk_heroes"
+            android:background="@drawable/icon_pk4_button"
+            android:text="英雄榜"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_width="280dp"
+            android:layout_height="45dp" />
+        <Button
+            android:id="@+id/pk_pk"
+            android:background="@drawable/icon_pk4_button1"
+            android:text="我要PK"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_margin="25dp"
+            android:layout_width="280dp"
+            android:layout_height="45dp" />
+        <Button
+            android:id="@+id/pk_history"
+            android:background="@drawable/icon_pk4_button2"
+            android:text="PK记录"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_width="280dp"
+            android:layout_height="45dp" />
+        <Button
+            android:id="@+id/pk_grade"
+            android:background="@drawable/icon_pk4_button3"
+            android:text="评委录入PK分数"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+
+</LinearLayout>

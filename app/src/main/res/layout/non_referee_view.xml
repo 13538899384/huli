@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#1296db">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp">
+        <TextView
+            android:id="@+id/non_referee_hit"
+            android:text="不好意思你不是该次PK的评委不能录入分数"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/non_referee"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="我知道了"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:layout_margin="25dp"
+            android:background="@drawable/range_btn_style"/>
+    </LinearLayout>
+
+</LinearLayout>

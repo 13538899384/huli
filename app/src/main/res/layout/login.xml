@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/login_ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/login_logo"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="55dp"
+            android:src="@mipmap/icon_logo" />
+
+        <com.ygxy.xqm.huli.myview.DIYEditTextAccount
+            android:id="@+id/login_account"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:hint="@string/hit_account"
+            android:padding="10dp" />
+
+        <com.ygxy.xqm.huli.myview.DIYEditTextPWD
+            android:id="@+id/login_pwd"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:hint="@string/hit_pwd"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/registered"
+                android:text="注册"
+                android:textSize="14sp"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/forget_password"
+                android:text="忘记密码?"
+                android:textSize="14sp"
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_splash"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/splash_login"/>
+    </LinearLayout>
+</LinearLayout>

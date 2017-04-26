@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ygxy.xqm.huli">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- mob短信 需要的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UserLoginActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name=".UserRegisterActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name=".ForgetPwdActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name=".AccountManageActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name=".PracticeItemActivity" android:launchMode="standard" android:screenOrientation="landscape"/>
+        <activity android:name=".MyGoldActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name=".PersonalInfoActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name=".HeroesRangeActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name=".PkHistoryActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name=".ChangPasswordActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name=".MyNotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".FeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Pharmaceutical_Preparations" android:launchMode="standard" android:screenOrientation="landscape"/>
+        <service android:name=".servier.NotificationService"/>
+        <service android:name=".servier.AutoUpdateService"/>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+    </application>
+
+</manifest>

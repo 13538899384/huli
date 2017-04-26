@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp">
+        <TextView
+            android:id="@+id/first_pass_hit"
+            android:layout_margin="10dp"
+            android:text="少侠恭喜你一次通过初级训练场的考验，获得金币一枚"
+            android:layout_marginRight="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/referee_cancel"
+            android:text="我知道了"
+            android:textColor="#25AE90"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:background="@drawable/range_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_margin="10dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</LinearLayout>

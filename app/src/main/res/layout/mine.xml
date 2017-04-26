@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@mipmap/icon_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.ygxy.xqm.huli.myview.MyTopbar
+        android:id="@+id/mine_bar"
+        android:background="#8000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_margin="15dp"
+            android:id="@+id/mine_personal_info"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mine_logo"
+                android:src="@mipmap/icon_logo"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/mine_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="昵称:"/>
+                <TextView
+                    android:id="@+id/mine_nickname_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="tony"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/mine_detail"
+                android:src="@drawable/icon_detail"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/mine_relayout_style"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:id="@+id/mine_gold"
+                android:text="我的金币"
+                android:textSize="16sp"
+                android:gravity="start|center"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/mine_btn_gold"
+                android:src="@drawable/icon_detail"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/mine_relayout_style"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:id="@+id/mine_notification"
+                android:text="消息通知"
+                android:textSize="16sp"
+                android:gravity="start|center"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/mine_btn_notice"
+                android:src="@drawable/icon_detail"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/mine_relayout_style"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            >
+
+            <ImageView
+                android:id="@+id/mine_btn_account"
+                android:src="@drawable/icon_detail"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/mine_account_manager"
+                android:text="账号管理"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="start|center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/mine_relayout_style"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            >
+            <TextView
+                android:id="@+id/mine_feedback"
+                android:text="意见反馈"
+                android:textSize="16sp"
+                android:gravity="start|center"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/mine_btn_feedback"
+                android:src="@drawable/icon_detail"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/mine_relayout_style"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            >
+            <TextView
+                android:id="@+id/mine_clear"
+                android:text="清理缓存"
+                android:textSize="16sp"
+                android:gravity="start|center"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/mine_clear_num"
+                android:text="0KB"
+                android:textSize="16sp"
+                android:gravity="end|center"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

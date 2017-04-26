@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HuLi</string>
+    <string name="action_settings">Settings</string>
+    <string name="hit_account">请输入用户名</string>
+    <string name="hit_pwd">请输入密码</string>
+    <string name="hit_res_pwd">请再次输入密码</string>
+    <string name="login_progressText">正在加载...</string>
+
+    <string name="hit_id">请输入学号</string>
+    <string name="hit_phone">请输入手机号</string>
+    <string name="hit_nickname">请输入昵称</string>
+    <string name="hit_identifying_code">请输入验证码</string>
+    <string name="btn_identifying_code">获取验证码</string>
+    <string name="btn_registered">注册</string>
+    
+    //思维导图界面
+    <string name="btn_mind_next">下一步</string>
+    <string name="btn_mind_back">上一步</string>
+    <string name="btn_out_mind">退出</string>
+    <string name="tv_range_first_hit">少侠，请按照无菌技术的操作步骤进行排序，将步骤拖到方框里对应的位置</string>
+    <string name="tv_range_second_hit">少侠，恭喜你排序正确，请进行评估和用物准备的考验</string>
+    <string name="tv_mind_hit">退出返回练习场首页</string>
+    <string name="tv_mind_start">无菌技术知识点思维导图</string>
+
+    <string name="tv_range_intermediate_hit">恭喜少侠通过初级练习场的考核，请点击剩下的步骤，进行中级练习的考核吧</string>
+</resources>

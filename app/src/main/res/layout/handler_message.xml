@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#1296db">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp">
+        <TextView
+            android:id="@+id/message_hit"
+            android:text="没有新消息"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+            <Button
+                android:id="@+id/message_cancel"
+                android:text="拒绝"
+                android:textColor="#25AE90"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/range_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_height="35dp" />
+            <Button
+                android:id="@+id/message_ok"
+                android:text="接受"
+                android:textColor="#25AE90"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/range_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_height="35dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

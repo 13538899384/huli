@@ -1,0 +1,13 @@
+<litepal>
+    <!-- 指定数据库名 -->
+    <dbname value="Huli"/>
+
+    <!-- 指定数据库版本号 -->
+    <version value="1"/>
+
+    <!-- 指定所有的映射模型 -->
+    <list>
+        <mapping class="com.ygxy.xqm.huli.bean.NotiHistory"/>
+    </list>
+
+</litepal>
