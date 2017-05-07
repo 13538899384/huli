@@ -12,6 +12,15 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -27,7 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity" android:launchMode="standard" android:screenOrientation="landscape"/>
         <activity android:name=".UserRegisterActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
         <activity android:name=".ForgetPwdActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
         <activity android:name=".AccountManageActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
@@ -40,6 +49,15 @@
         <activity android:name=".MyNotificationActivity" android:screenOrientation="portrait"/>
         <activity android:name=".FeedbackActivity" android:screenOrientation="portrait"/>
         <activity android:name=".Pharmaceutical_Preparations" android:launchMode="standard" android:screenOrientation="landscape"/>
+        <activity android:name=".IntermediateActivity" android:configChanges="orientation" />
+        <activity android:name=".AdvancedActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".DaoNiaoAdvancedActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".WujunAssessActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".DanNiaoPrimaryActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".DaoniaoIntermediateActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".Daoniao_Preparations" android:screenOrientation="landscape"/>
+        <activity android:name=".DaoniaoAssessActivity" android:screenOrientation="landscape"/>
+        <!--<activity android:name=".DaoNiaoAdvancedActivity" android:screenOrientation="landscape"/>-->
         <service android:name=".servier.NotificationService"/>
         <service android:name=".servier.AutoUpdateService"/>
         <activity
@@ -47,6 +65,12 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
 
 </manifest>

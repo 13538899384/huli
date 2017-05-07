@@ -6,6 +6,8 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/assess_rl"
+        android:visibility="gone"
         android:gravity="center"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -25,12 +27,15 @@
             android:id="@+id/start_assess"
             android:background="@mipmap/icon_start_assess"
             android:text="开始评估"
+            android:shadowRadius="@null"
+            android:drawableBottom="@null"
             android:layout_gravity="center"
             android:layout_marginTop="75dp"
             android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
-            android:layout_width="120dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/imageView"
             android:layout_centerHorizontal="true" />
@@ -41,22 +46,38 @@
             android:text="评估参考"
             android:layout_gravity="center"
             android:textSize="16sp"
+            android:shadowRadius="@null"
+            android:drawableBottom="@null"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
-            android:layout_width="120dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_below="@+id/start_assess"
             android:layout_alignLeft="@+id/start_assess"
             android:layout_alignStart="@+id/start_assess" />
-
-        <!--<de.hdodenhof.circleimageview.CircleImageView-->
-            <!--android:src="@mipmap/icon_logo"-->
-            <!--android:layout_width="150dp"-->
-            <!--android:layout_height="150dp"-->
-            <!--android:id="@+id/circleImageView"-->
-            <!--android:layout_marginBottom="62dp"-->
-            <!--android:layout_above="@+id/assess_reference"-->
-            <!--android:layout_centerHorizontal="true" />-->
     </RelativeLayout>
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/assess_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/assess_reference_content"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:text="评估参考内容是："
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/assess_close"
+                android:textSize="16sp"
+                android:text="关闭"
+                android:background="@drawable/login_btn_style"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
 </RelativeLayout>

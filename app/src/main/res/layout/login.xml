@@ -3,7 +3,6 @@
     android:layout_height="match_parent"
     android:background="@mipmap/icon_background"
     android:orientation="vertical">
-
     <LinearLayout
         android:id="@+id/login_ll"
         android:orientation="vertical"

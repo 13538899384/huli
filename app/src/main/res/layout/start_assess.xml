@@ -11,9 +11,9 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp">
-        <Button
+        <com.ygxy.xqm.huli.myview.RecordButton
             android:id="@+id/start_recording"
-            android:text="点击开始录音"
+            android:text="按住开始录音"
             android:textColor="#25AE90"
             android:gravity="center"
             android:textSize="16sp"

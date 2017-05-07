@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/ll_practice_wujun_chu"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_width="150dp"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/practice_name"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textSize="16sp"
+                            android:text="无菌技术"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/practice_name_level"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textSize="16sp"
+                            android:text="初"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/practice_image"
+                        android:layout_width="match_parent"
+                        android:src="@mipmap/icon_logo"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:id="@+id/practice_level"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:text="初  中  高"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/ll_practice_wujun_zhong"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_width="150dp"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/practice_wujun_name"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textSize="16sp"
+                            android:text="无菌技术"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/practice_cwujun_zhong"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textSize="16sp"
+                            android:text="中"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/practice_wujun_image1"
+                        android:layout_width="match_parent"
+                        android:src="@mipmap/icon_logo"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:text="初  中  高"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/ll_practice_wujun_gao"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_width="150dp"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textSize="16sp"
+                            android:text="无菌技术"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/practice_cwujun_gao"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textSize="16sp"
+                            android:text="高"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/practice_wujun_image2"
+                        android:layout_width="match_parent"
+                        android:src="@mipmap/icon_logo"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:text="初  中  高"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/ll_practice_daoniao_chu"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_width="150dp"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/practice_daoniao_name0"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textSize="16sp"
+                            android:text="导尿技术"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/practice_daoniao_level0"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textSize="16sp"
+                            android:text="初"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/practice_daoniao_image0"
+                        android:layout_width="match_parent"
+                        android:src="@mipmap/icon_logo"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:text="初  中  高"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/ll_practice_daoniao_zhong"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_width="150dp"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/practice_daoniao_name1"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textSize="16sp"
+                            android:text="导尿技术"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/practice_daoniao_zhong"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textSize="16sp"
+                            android:text="中"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/practice_daoniao_image1"
+                        android:layout_width="match_parent"
+                        android:src="@mipmap/icon_logo"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:text="初  中  高"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/ll_practice_daoniao_gao"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_width="150dp"
+                    android:background="@color/white"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/practice_daoniao_name2"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textSize="16sp"
+                            android:text="导尿技术"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/practice_daoniao_gao"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="5dp"
+                            android:textSize="16sp"
+                            android:text="高"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/practice_daoniao_image2"
+                        android:layout_width="match_parent"
+                        android:src="@mipmap/icon_logo"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:text="初  中  高"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

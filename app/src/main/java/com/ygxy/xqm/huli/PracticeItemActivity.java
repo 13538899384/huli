@@ -20,6 +20,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
+ * 无菌技术初级
  * Created by XQM on 2017/3/22.
  */
 
@@ -44,7 +45,6 @@ public class PracticeItemActivity extends FragmentActivity implements BackHandle
         practice_rl.setVisibility(View.VISIBLE);
         itemFragment = new PracticeItemFragment();
         addItemFragment(itemFragment);
-
     }
 
     public void addItemFragment(PracticeItemFragment itemFragment) {

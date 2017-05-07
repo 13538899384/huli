@@ -17,10 +17,14 @@
     <string name="btn_mind_next">下一步</string>
     <string name="btn_mind_back">上一步</string>
     <string name="btn_out_mind">退出</string>
-    <string name="tv_range_first_hit">少侠，请按照无菌技术的操作步骤进行排序，将步骤拖到方框里对应的位置</string>
+    <string name="tv_range_first_hit">少侠，请按照无菌技术的操作步骤进行排序，点击步骤添加到方框里对应的位置</string>
     <string name="tv_range_second_hit">少侠，恭喜你排序正确，请进行评估和用物准备的考验</string>
     <string name="tv_mind_hit">退出返回练习场首页</string>
     <string name="tv_mind_start">无菌技术知识点思维导图</string>
 
     <string name="tv_range_intermediate_hit">恭喜少侠通过初级练习场的考核，请点击剩下的步骤，进行中级练习的考核吧</string>
+
+    <string name="selection">选中%s个</string>
+    <string name="select_all">全选</string>
+    <string name="unselect_all">全不选</string>
 </resources>

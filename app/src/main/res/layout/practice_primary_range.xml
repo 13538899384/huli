@@ -6,7 +6,7 @@
 
     <ScrollView
         android:id="@+id/practice_primary_scroll"
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <LinearLayout
@@ -49,7 +49,7 @@
                     android:gravity="center"
                     android:layout_toRightOf="@+id/practice_tv2"
                     android:layout_margin="10dp"
-                    android:text="药物准备"/>
+                    android:text="用物准备"/>
                 <Button
                     android:id="@+id/practice_ll1"
                     android:orientation="vertical"
@@ -248,7 +248,7 @@
 
     <LinearLayout
         android:id="@+id/practice_primary_right"
-        android:visibility="visible"
+        android:visibility="gone"
         android:background="@mipmap/icon_background"
         android:layout_width="match_parent"
         android:orientation="vertical"
@@ -270,13 +270,12 @@
             android:layout_alignBottom="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <ImageView
-                android:layout_below="@+id/practice_primary_hit"
-                android:src="@drawable/icon_perple"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:id="@+id/imageView4" />
+            <!--<ImageView-->
+                <!--android:src="@drawable/icon_primary_next"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:id="@+id/imageView4" />-->
             <Button
                 android:id="@+id/practice_primary_next"
                 android:layout_alignParentRight="true"
@@ -285,15 +284,8 @@
                 android:background="@drawable/icon_next_or_know"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-            <TextView
-                android:background="@drawable/mine_relayout_style"
-                android:id="@+id/practice_primary_hit"
-                android:layout_centerInParent="true"
-                android:text="少侠，恭喜你排序正确，请进行评估和准备用物的考验"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </RelativeLayout>
 
+        </RelativeLayout>
 
     </LinearLayout>
 
