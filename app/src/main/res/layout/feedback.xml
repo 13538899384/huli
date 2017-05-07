@@ -70,17 +70,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </RelativeLayout>
-            
+
             <Button
                 android:id="@+id/feedback_submit"
-                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@mipmap/icon_feedback_load"
                 android:text="提交"
                 android:textColor="@color/white"
-                android:background="@mipmap/icon_feedback_load"
-                android:layout_gravity="center"
-                android:layout_marginTop="60dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textSize="16sp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

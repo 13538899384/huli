@@ -5,50 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/account_manage1"
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <RelativeLayout
-            android:background="@color/white"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="45dp">
-            <TextView
-                android:id="@+id/account_change_pwd"
-                android:text="修改密码"
-                android:textSize="16sp"
-                android:gravity="start|center"
-                android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+            <LinearLayout
+                android:id="@+id/account_manage1"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-            <ImageView
-                android:src="@drawable/icon_detail"
-                android:layout_alignParentRight="true"
-                android:layout_width="25dp"
-                android:layout_marginRight="5dp"
-                android:layout_height="wrap_content" />
-        </RelativeLayout>
-        <Button
-            android:id="@+id/account_sign_out"
-            android:layout_marginTop="200dp"
-            android:layout_gravity="bottom|center"
-            android:background="@drawable/login_btn_style"
-            android:text="退出登录"
-            android:layout_width="150dp"
-            android:layout_height="40dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/account_manage2"
-        android:orientation="vertical"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <!--<fragment-->
-            <!--android:id="@+id/account_change_pwd_fragment"-->
-            <!--android:name="com.ygxy.xqm.huli.fragment.UserChangePasswordFragment"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent">-->
-        <!--</fragment>-->
-    </LinearLayout>
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:id="@+id/account_change_pwd"
+                        android:text="修改密码"
+                        android:textSize="16sp"
+                        android:gravity="start|center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:src="@drawable/icon_detail"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="25dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <Button
+                    android:id="@+id/account_sign_out"
+                    android:layout_marginTop="200dp"
+                    android:layout_gravity="bottom|center"
+                    android:background="@drawable/login_btn_style"
+                    android:text="退出登录"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/account_manage2"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--<fragment-->
+                <!--android:id="@+id/account_change_pwd_fragment"-->
+                <!--android:name="com.ygxy.xqm.huli.fragment.UserChangePasswordFragment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--</fragment>-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

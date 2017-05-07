@@ -20,25 +20,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".UserLoginActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
-        <activity android:name=".UserRegisterActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
-        <activity android:name=".ForgetPwdActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
-        <activity android:name=".AccountManageActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity" android:launchMode="standard" android:screenOrientation="landscape"/>
+        <activity android:name=".UserRegisterActivity" android:launchMode="standard" android:screenOrientation="landscape"/>
+        <activity android:name=".ForgetPwdActivity" android:launchMode="standard" android:screenOrientation="landscape"/>
+        <activity android:name=".AccountManageActivity" android:launchMode="standard" android:screenOrientation="landscape"/>
         <activity android:name=".PracticeItemActivity" android:launchMode="standard" android:screenOrientation="landscape"/>
-        <activity android:name=".MyGoldActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
-        <activity android:name=".PersonalInfoActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
-        <activity android:name=".HeroesRangeActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
-        <activity android:name=".PkHistoryActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
-        <activity android:name=".ChangPasswordActivity" android:launchMode="standard" android:screenOrientation="portrait"/>
-        <activity android:name=".MyNotificationActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".FeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MyGoldActivity" android:launchMode="standard" android:screenOrientation="landscape"/>
+        <activity android:name=".PersonalInfoActivity" android:launchMode="standard" android:screenOrientation="landscape"/>
+        <activity android:name=".HeroesRangeActivity" android:launchMode="standard" android:screenOrientation="landscape"/>
+        <activity android:name=".PkHistoryActivity" android:launchMode="standard" android:screenOrientation="landscape"/>
+        <activity android:name=".ChangPasswordActivity" android:launchMode="standard" android:screenOrientation="landscape"/>
+        <activity android:name=".MyNotificationActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".FeedbackActivity" android:screenOrientation="landscape"/>
         <activity android:name=".Pharmaceutical_Preparations" android:launchMode="standard" android:screenOrientation="landscape"/>
         <service android:name=".servier.NotificationService"/>
         <service android:name=".servier.AutoUpdateService"/>

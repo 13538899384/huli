@@ -5,64 +5,69 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/white">
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp">
-        <Button
-            android:id="@+id/start_recording"
-            android:text="点击开始录音"
-            android:textColor="#25AE90"
-            android:gravity="center"
-            android:textSize="16sp"
-            android:layout_gravity="center"
-            android:background="@drawable/range_btn_style"
-            android:layout_width="200dp"
-            android:layout_marginRight="20dp"
-            android:layout_margin="10dp"
-            android:layout_height="60dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp">
-        <Button
-            android:id="@+id/assess_cancel"
-            android:text="取消"
-            android:textColor="#25AE90"
-            android:gravity="center"
-            android:textSize="16sp"
-            android:layout_gravity="center"
-            android:background="@drawable/range_btn_style"
-            android:layout_width="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_height="40dp" />
-        <Button
-            android:id="@+id/assess_stop"
-            android:text="暂停"
-            android:textColor="#25AE90"
-            android:gravity="center"
-            android:textSize="16sp"
-            android:layout_gravity="center"
-            android:background="@drawable/range_btn_style"
-            android:layout_width="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_height="40dp" />
-        <Button
-            android:id="@+id/assess_finish"
-            android:text="完成"
-            android:textColor="#25AE90"
-            android:gravity="center"
-            android:textSize="16sp"
-            android:layout_gravity="center"
-            android:background="@drawable/range_btn_style"
-            android:layout_width="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_height="40dp" />
-    </LinearLayout>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/start_recording"
+                android:text="点击开始录音"
+                android:textColor="#25AE90"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:background="@drawable/range_btn_style"
+                android:layout_width="200dp"
+                android:layout_marginRight="20dp"
+                android:layout_margin="10dp"
+                android:layout_height="60dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp">
+            <Button
+                android:id="@+id/assess_cancel"
+                android:text="取消"
+                android:textColor="#25AE90"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:background="@drawable/range_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/assess_stop"
+                android:text="暂停"
+                android:textColor="#25AE90"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:background="@drawable/range_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/assess_finish"
+                android:text="完成"
+                android:textColor="#25AE90"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:background="@drawable/range_btn_style"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
