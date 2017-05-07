@@ -6,63 +6,76 @@
     android:minWidth="280dip"
     android:background="#FFFFFFFF">
 
-    <TextView
-        android:id="@+id/dialog_title"
-        android:layout_width="fill_parent"
-        android:layout_height="40.0dip"
-        android:gravity="center_vertical"
-        android:paddingLeft="10.0dip"
-        android:text="提示"
-        android:textSize="20dip"
-        android:textStyle="bold"
-        android:textColor="#0087CB"/>
-
-    <ImageView
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent"
-        android:background="@drawable/dialog_sparator"/>
-
-    <LinearLayout
-        android:id="@+id/dialog_content"
-        android:orientation="vertical"
-        android:layout_height="wrap_content"
-        android:layout_width="fill_parent">
-        <TextView
-            android:id="@+id/dialog_message"
-            android:layout_width="fill_parent"
-            android:layout_height="50.0dip"
-            android:gravity="center_vertical"
-            android:paddingLeft="10dip"
-            android:text="提示内容"
-            android:textSize="20dip"
-            android:textStyle="bold"
-            android:textColor="#707070"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="50.0dip"
-            android:layout_alignParentTop="true"
-            android:gravity="center">
-            <Button
-                android:id="@+id/dialog_back"
-                android:layout_width="120dip"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="5dip"
-                android:text="取消"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.0dip"
+                android:text="提示"
                 android:textSize="20dip"
-                android:textColor="#ffffff"
                 android:textStyle="bold"
-                android:background="@drawable/dlg_bckbtn_selector"/>
-            <Button
-                android:id="@+id/dialog_confirm"
-                android:layout_width="120dip"
+                android:textColor="#0087CB"/>
+
+            <ImageView
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dip"
-                android:text="确定"
-                android:textSize="20dip"
-                android:textColor="#ffffff"
-                android:textStyle="bold"
-                android:background="@drawable/dlg_cfgrmbtn_selector"/>
+                android:layout_width="fill_parent"
+                android:background="@drawable/dialog_sparator"/>
+
+            <LinearLayout
+                android:id="@+id/dialog_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <TextView
+                    android:id="@+id/dialog_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="提示内容"
+                    android:textSize="20dip"
+                    android:textStyle="bold"
+                    android:textColor="#707070"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/dialog_back"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:text="取消"
+                        android:textSize="20dip"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:background="@drawable/dlg_bckbtn_selector"/>
+                    <Button
+                        android:id="@+id/dialog_confirm"
+                        android:layout_width="120dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="确定"
+                        android:textSize="20dip"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:background="@drawable/dlg_cfgrmbtn_selector"/>
+                </LinearLayout>
+            </LinearLayout>
+
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
+
+
 </LinearLayout>
