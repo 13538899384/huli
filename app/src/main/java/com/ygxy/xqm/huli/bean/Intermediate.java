@@ -5,11 +5,13 @@ package com.ygxy.xqm.huli.bean;
  */
 
 public class Intermediate {
+    public boolean isSelect;
     private String number;
     private int url1;
     private int url2;
 
-    public Intermediate(String number,int url1,int url2){
+    public Intermediate(boolean isSelect,String number,int url1,int url2){
+        this.isSelect = isSelect;
         this.number = number;
         this.url1 = url1;
         this.url2 =  url2;

@@ -39,19 +39,19 @@ public class DaoIntermediateFragment extends Fragment implements MediaPlayer.OnP
     VideoView videoView;
     @BindView(R.id.once_pass_listView)RecyclerView recyclerView;
     private Intermediate[] intermediates = {
-            new Intermediate("第一题：擦车顺序",R.drawable.icon_tiwei1_error,R.drawable
+            new Intermediate(false,"第一题：擦车顺序",R.drawable.icon_tiwei1_error,R.drawable
                     .icon_tiwei1_right),
-            new Intermediate("第二题：拿取无菌持物钳",R.drawable.icon_xiaodu2_right,R.drawable
+            new Intermediate(false,"第二题：拿取无菌持物钳",R.drawable.icon_xiaodu2_right,R.drawable
                     .icon_xiaodu2_error),
-            new Intermediate("第三题：打开无菌治疗巾手法",R.drawable.icon_open_bao3_error,R.drawable
+            new Intermediate(false,"第三题：打开无菌治疗巾手法",R.drawable.icon_open_bao3_error,R.drawable
                     .icon_open_bao3_right),
-            new Intermediate("第四题：铺盘",R.drawable.icon_dongjin4_right,R.drawable
+            new Intermediate(false,"第四题：铺盘",R.drawable.icon_dongjin4_right,R.drawable
                     .icon_dongjin4_right),
-            new Intermediate("第五题：打开无菌盅",R.drawable.icon_shuinang6_error,R.drawable
+            new Intermediate(false,"第五题：打开无菌盅",R.drawable.icon_shuinang6_error,R.drawable
                     .icon_shuinang6_right),
-            new Intermediate("第六题：倒无菌溶液",R.drawable.icon_biaoqian7_error,R.drawable
+            new Intermediate(false,"第六题：倒无菌溶液",R.drawable.icon_biaoqian7_error,R.drawable
                     .icon_biaoqian7_right),
-            new Intermediate("第七题：封盘",R.drawable.icon_shoutao8_error,R.drawable
+            new Intermediate(false,"第七题：封盘",R.drawable.icon_shoutao8_error,R.drawable
                     .icon_shoutao8_right)};
     private List<Intermediate> list = new ArrayList<>();
     private IntermediateAdapter adapter;

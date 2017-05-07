@@ -38,22 +38,23 @@ public class IntermediateFragment extends Fragment implements MediaPlayer.OnPrep
     @BindView(R.id.intermediate_first_right)
     VideoView videoView;
     @BindView(R.id.once_pass_listView)RecyclerView recyclerView;
+    private ArrayList<Intermediate> mDatas = new ArrayList<>();
     private Intermediate[] intermediates = {
-            new Intermediate("第一题：擦车顺序",R.drawable.wujun_cache_r1,R.drawable
+            new Intermediate(false,"第一题：擦车顺序",R.drawable.wujun_cache_r1,R.drawable
     .wujun_cache_x1),
-            new Intermediate("第二题：拿取无菌持物钳",R.drawable.wujun_chitie_x2,R.drawable
+            new Intermediate(false,"第二题：拿取无菌持物钳",R.drawable.wujun_chitie_x2,R.drawable
             .wujun_chitie_r2),
-            new Intermediate("第三题：打开无菌治疗巾手法",R.drawable.wujun_openjin_r3,R.drawable
+            new Intermediate(false,"第三题：打开无菌治疗巾手法",R.drawable.wujun_openjin_r3,R.drawable
             .wujun_openjin_x3),
-            new Intermediate("第四题：铺盘",R.drawable.wujun_pupan_r4,R.drawable
+            new Intermediate(false,"第四题：铺盘",R.drawable.wujun_pupan_r4,R.drawable
             .wujun_pupan_x4),
-            new Intermediate("第五题：打开无菌盅",R.drawable.wujun_openz_r5,R.drawable
+            new Intermediate(false,"第五题：打开无菌盅",R.drawable.wujun_openz_r5,R.drawable
             .wujun_openz_x5),
-            new Intermediate("第六题：倒无菌溶液",R.drawable.wujun_daoye_r7,R.drawable
+            new Intermediate(false,"第六题：倒无菌溶液",R.drawable.wujun_daoye_r7,R.drawable
             .wujun_daoye_x7),
-            new Intermediate("第七题：封盘",R.drawable.wujun_daoye_r8,R.drawable
+            new Intermediate(false,"第七题：封盘",R.drawable.wujun_daoye_r8,R.drawable
             .wujun_fengpan_x8),
-            new Intermediate("第八题：穿无菌手套",R.drawable.wujun_tao_r9,R.drawable
+            new Intermediate(false,"第八题：穿无菌手套",R.drawable.wujun_tao_r9,R.drawable
                     .wujun_tao_x9)
             };
     private List<Intermediate> list = new ArrayList<>();
@@ -78,9 +79,31 @@ public class IntermediateFragment extends Fragment implements MediaPlayer.OnPrep
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        init();
         initData();
     }
 
+    /**
+     * 初始化相关对象
+     */
+    private void init() {
+        mDatas.add(new Intermediate(false,"第一题：擦车顺序",R.drawable.wujun_cache_r1,R.drawable
+                .wujun_cache_x1));
+        mDatas.add(new Intermediate(false,"第二题：拿取无菌持物钳",R.drawable.wujun_chitie_x2,R.drawable
+                .wujun_chitie_r2));
+        mDatas.add(new Intermediate(false,"第三题：打开无菌治疗巾手法",R.drawable.wujun_openjin_r3,R.drawable
+                .wujun_openjin_x3));
+        mDatas.add(new Intermediate(false,"第四题：铺盘",R.drawable.wujun_pupan_r4,R.drawable
+                .wujun_pupan_x4));
+        mDatas.add(new Intermediate(false,"第五题：打开无菌盅",R.drawable.wujun_openz_r5,R.drawable
+                .wujun_openz_x5));
+        mDatas.add(new Intermediate(false,"第六题：倒无菌溶液",R.drawable.wujun_daoye_r7,R.drawable
+                .wujun_daoye_x7));
+        mDatas.add(new Intermediate(false,"第七题：封盘",R.drawable.wujun_daoye_r8,R.drawable
+                .wujun_fengpan_x8));
+        mDatas.add(new Intermediate(false,"第八题：穿无菌手套",R.drawable.wujun_tao_r9,R.drawable
+                .wujun_tao_x9));
+    }
     /**
      * 初始化数据
      */
@@ -94,14 +117,14 @@ public class IntermediateFragment extends Fragment implements MediaPlayer.OnPrep
         videoView.setVideoURI(videoUri);
         getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         list.clear();
-        for (int i = 0;i < intermediates.length;i++){
-//            Random random = new Random();
-//            int index = random.nextInt(intermediates.length);
-            list.add(intermediates[i]);
-        }
+//        for (int i = 0;i < intermediates.length;i++){
+////            Random random = new Random();
+////            int index = random.nextInt(intermediates.length);
+//            list.add(intermediates[i]);
+//        }
         GridLayoutManager layoutManager = new GridLayoutManager(getActivity(),1);
         recyclerView.setLayoutManager(layoutManager);
-        adapter = new IntermediateAdapter(getActivity(),list);
+        adapter = new IntermediateAdapter(getActivity(),mDatas);
         recyclerView.setAdapter(adapter);
     }
 
